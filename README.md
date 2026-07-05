@@ -1,17 +1,17 @@
-# lo6-transcriber
+# rvrb-transcriber
 
 **Atomic audio/video transcription.** Audio in, text out.
 
-Part of the [lo6](https://github.com/lo6) ecosystem — composable LEGO pieces for the newsroom.
+Part of the [reverberage](https://github.com/reverberage) ecosystem — composable LEGO pieces for the newsroom.
 
 ## Install
 
 ```bash
 # OpenAI API (recommended for quick start)
-pip install "lo6-transcriber[openai]"
+pip install "rvrb-transcriber[openai]"
 
 # Local whisper (no API calls, runs on your machine)
-pip install "lo6-transcriber[local]"
+pip install "rvrb-transcriber[local]"
 ```
 
 Requires `OPENAI_API_KEY` env var when using the `openai` engine.
@@ -21,15 +21,15 @@ Requires `OPENAI_API_KEY` env var when using the `openai` engine.
 ### CLI
 
 ```bash
-lo6-transcribe interview.mp3
-lo6-transcribe recording.wav --engine local --language es
-lo6-transcribe video.mp4 --format srt --output subtitles.srt
+rvrb-transcribe interview.mp3
+rvrb-transcribe recording.wav --engine local --language es
+rvrb-transcribe video.mp4 --format srt --output subtitles.srt
 ```
 
 ### Python
 
 ```python
-from lo6_transcriber import transcribe
+from rvrb_transcriber import transcribe
 
 result = transcribe("interview.mp3")
 print(result.text)
@@ -56,9 +56,9 @@ print(result.model_dump_json(indent=2))  # JSON
 
 | Engine | Requires | Best for |
 |--------|----------|----------|
-| `openai` | `pip install lo6-transcriber[openai]` + API key | Quick, high accuracy, no local GPU |
-| `local` | `pip install lo6-transcriber[local]` | Offline, no API costs, GPU recommended |
+| `openai` | `pip install rvrb-transcriber[openai]` + API key | Quick, high accuracy, no local GPU |
+| `local` | `pip install rvrb-transcriber[local]` | Offline, no API costs, GPU recommended |
 
 ## License
 
-Apache-2.0 — same as the lo6 ecosystem.
+Apache-2.0 — same as the reverberage ecosystem.

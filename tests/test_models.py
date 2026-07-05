@@ -1,6 +1,6 @@
-"""Tests for lo6-transcriber models and engine."""
+"""Tests for rvrb-transcriber models and engine."""
 
-from lo6_transcriber import Transcript, Segment
+from rvrb_transcriber import Transcript, Segment
 
 
 class TestSegment:

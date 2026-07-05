@@ -1,4 +1,4 @@
-"""CLI entry point for lo6-transcriber."""
+"""CLI entry point for rvrb-transcriber."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ import typer
 from . import transcribe
 
 app = typer.Typer(
-    name="lo6-transcribe",
+    name="rvrb-transcribe",
     help="Atomic audio/video transcription. Audio in, text out.",
 )
 

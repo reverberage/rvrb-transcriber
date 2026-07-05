@@ -2,7 +2,7 @@
 
 import pytest
 from unittest.mock import MagicMock, patch
-from lo6_transcriber.engine import OpenAIWhisperEngine
+from rvrb_transcriber.engine import OpenAIWhisperEngine
 
 
 class TestOpenAIWhisperEngine:
@@ -66,7 +66,7 @@ class TestLocalWhisperEngine:
         reason="openai-whisper requires large model downloads — test manually",
     )
     def test_transcribe_mock_local(self):
-        from lo6_transcriber.engine import LocalWhisperEngine
+        from rvrb_transcriber.engine import LocalWhisperEngine
 
         engine = LocalWhisperEngine(model="tiny")
         engine._model = MagicMock()

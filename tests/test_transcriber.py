@@ -1,7 +1,7 @@
 """Unit tests for the top-level transcribe() function."""
 
 import pytest
-from lo6_transcriber import transcribe
+from rvrb_transcriber import transcribe
 
 
 def test_transcribe_file_not_found():

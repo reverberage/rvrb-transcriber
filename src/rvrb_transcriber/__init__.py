@@ -1,9 +1,9 @@
-"""lo6-transcriber: Atomic audio/video transcription.
+"""rvrb-transcriber: Atomic audio/video transcription.
 
 A standalone LEGO piece. Audio in, text out.
 
 Usage:
-    from lo6_transcriber import transcribe
+    from rvrb_transcriber import transcribe
 
     result = transcribe("interview.mp3")
     print(result.text)
